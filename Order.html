@@ -7,143 +7,284 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="/img/s.png" alt="Logo" style="height: 40px;">
-        </a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gift</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pay</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Store</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Looking for something specific?" aria-label="Search">
-            </form>
-            <a class="nav-link" href="#">
-                <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon" style="height: 30px;">
+    <div class="cintainer">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/img/Starbuckslogo.jpg" alt="Logo" style="height: 40px;">
             </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gift.html">Gift</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pay.html">Pay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Store.html">Store</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Looking for something specific?" aria-label="Search">
+                </form>
+                <a class="nav-link" href="#">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon" style="height: 30px;">
+                </a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/img/Starbuckslogo.jpg" alt="Logo" style="height: 40px;">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Gift.html">Gift</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pay.html">Pay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Store.html">Store</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Looking for something specific?" aria-label="Search">
+                </form>
+                <a class="nav-link" href="#">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="User Icon" style="height: 30px;">
+                </a>
+            </div>
+        </nav>
+
+    </div>
+    <div style="display: flex;justify-content: center;justify-content: space-around;background-color: #c6cfd7; text-color: white;">
+        <div><a href="">Bestseller</div></a>
+        <div><a href="">Drinks</div></a>
+        <div><a href="">Food</div></a>
+        <div><a href="">Ready to Eat</div></a>
+        <div><a href="">Marchandise</div></a>
+        <div><a href="">Coffee At Home</div></a>
+    </div>
+
+    
+
+
+
+
+
+    <style>
+        /* Card Styling */
+        .card {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Flexbox for Static Slider */
+        .card-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;  /* Allows horizontal scrolling */
+            padding: 20px;
+        }
+
+        /* Hide Scrollbar */
+        .card-container::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .product-card {
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100px;
+            height: 120px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5" >
+        <h2 class="text-center">Featured Items</h2>
+        
+        <div class="card-container mt-5 mb-2"  >
+            <!-- Card 1 -->
+             <div>
+            <div class="card" style="width: 20rem;">
+                <img src="brista pride latte.jpg"  class="card-img-top" alt="brista pride latte">
+                <div class="card-body">
+                    <h5 class="card-title">brista pride latte</h5>
+                    <p class="card-text">SHORT(Short Barista Pride Latte)
+                        <br>
+                        Milk MILK
+                        Barista Pride Latte <br>
+        
+                        
+                        <b>₹ 430.50</b></p>
+                    <a href="#" class="btn btn-secondary">Add Items</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" style="width: 20rem;">
+                <img src="pinkdrink.jpg" class="card-img-top" alt="pink">
+                <div class="card-body">
+                    <b><h5 class="card-title">Pink Drinks</h5></b>
+                    <p class="card-text">Refreshing handcrafted drinks.
+                        <b>₹ 430.50</b>
+                    </p>
+
+                    <a href="#" class="btn btn-secondary">Add Items</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" style="width: 20rem;">
+                <img src="/Caffe Americano.jpg" class="card-img-top" alt="Cappuccino">
+                <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text">Dark, Rich in flavour espresso lies in wait under a smoothed and stretched layer of thick foam. </p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
+                </div>
+            </div>
+                <br>
+            </div>
+            <div>
+            <!-- Card 4 -->
+            <div class="card" style="width: 20rem;">
+                <img src="Iced Salted Pretzel Caramel Latte.jpg" height="" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Cold Coffee</h5>
+                    <p class="card-text">Freshly baked pastries to pair with your drink.</p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
+                </div>
+            </div>
+            <br>
+            <!-- Card 5 -->
+            <div class="card" style="width: 20rem;">
+                <img src="/Iced Crunchy Red Hat Mocha Latte.jpg" height="" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Cold Coffee</h5>
+                    <p class="card-text">Freshly baked pastries to pair with your drink.</p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
+                </div>
+            </div>
+            <br>
+            <!-- Card 6 -->
+            <div class="card" style="width: 20rem;">
+                <img src="/capacino.jpg" height="" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Cold Coffee</h5>
+                    <p class="card-text">Freshly baked pastries to pair with your drink.</p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
+                </div>
+            </div>
+            <br>
         </div>
-    </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="/img/s.png" alt="Starbucks Logo" class="img-fluid mb-3">
+        <div>
+            <!-- Card 6 -->
+            <div class="card" style="width: 20rem;">
+                <img src="/Classic Iced Coffee.jpg" height="" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Cold Coffee</h5>
+                    <p class="card-text">Freshly baked pastries to pair with your drink.</p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
                 </div>
-                <div class="col-md-2">
-                    <h5>About Us</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Our Heritage</a></li>
-                        <li><a href="#" class="text-white">Coffeehouse</a></li>
-                        <li><a href="#" class="text-white">Our Company</a></li>
-                    </ul>
+            </div>
+            <br>
+            <!-- Card 7 -->
+            <div class="card" style="width: 20rem;">
+                <img src="/Double Chocolate Chip Frappuccino.jpg" height="" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Cold Coffee</h5>
+                    <p class="card-text">Freshly baked pastries to pair with your drink.</p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
                 </div>
-                <div class="col-md-2">
-                    <h5>Responsibility</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Diversity</a></li>
-                        <li><a href="#" class="text-white">Community</a></li>
-                        <li><a href="#" class="text-white">Ethical Sourcing</a></li>
-                        <li><a href="#" class="text-white">Environmental Stewardship</a></li>
-                        <li><a href="#" class="text-white">Learn More</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="text-white">FAQs</a></li>
-                        <li><a href="#" class="text-white">Terms of Use</a></li>
-                        <li><a href="#" class="text-white">Customer Service</a></li>
-                        <li><a href="#" class="text-white">Delivery</a></li>
-                        <li><a href="#" class="text-white">Season's Gifting</a></li>
-                        <li><a href="#" class="text-white">Loyalty Program Terms</a></li>
-                        <li><a href="#" class="text-white">Combo Offer</a></li>
-                        <li><a href="#" class="text-white">Holiday Cheers</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5>Social Media</h5>
-                    <a href="#"><img src="/img/ii.svg" alt="Instagram" class="img-fluid mr-2" style="width: 24px;"></a>
-                    <a href="#"><img src="/img/ff.svg" alt="Facebook" class="img-fluid mr-2" style="width: 24px;"></a>
-                    <a href="#"><img src="/img/tt.svg" alt="Twitter" class="img-fluid" style="width: 24px;"></a>
-                    <div class="mt-3">
-                        <a href="#"><img src="/img/ap.png" alt="App Store" class="img-fluid mb-2" style="width: 120px;"></a>
-                        <a href="#"><img src="/img/go.png" alt="Google Play" class="img-fluid" style="width: 120px;"></a>
-                    </div>
+            </div>
+            <br>
+            <!-- Card 8 -->
+            <div class="card" style="width: 20rem;">
+                <img src="/Vienna Creamy Latte.jpg" height="" class="card-img-top" alt="Cold Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Cold Coffee</h5>
+                    <p class="card-text">Freshly baked pastries to pair with your drink.</p>
+                    <a href="#" class="btn btn-secondary">Add Menu</a>
                 </div>
             </div>
         </div>
-    </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
    
 </body>
 </html>
